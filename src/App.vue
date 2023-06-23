@@ -1,15 +1,24 @@
 <script lang="ts">
-import FrameView from '@/views/FrameView.vue'
+import Logo from './assets/icons/logo.svg'
 
 export default {
-  components: {
-    FrameView
+  components: {},
+  data() {
+    return {
+      Logo
+    }
   }
 }
 </script>
 
 <template>
-  <FrameView />
+  <div class="app">
+    <header>
+      <div><img alt="logo" :src="Logo" /></div>
+    </header>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@import 'App.style.scss';
+</style>
