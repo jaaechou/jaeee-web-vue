@@ -1,0 +1,31 @@
+
+.headerRoot {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #510674;
+  height: 60px;
+
+  >img {
+    height: 30px;
+    padding-left: 40px;
+  }
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  color: white;
+  gap: 20px;
+  line-height: 30px;
+
+  >img {
+    height: 23px;
+  }
+}

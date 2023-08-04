@@ -1,8 +1,10 @@
 <script lang="ts">
 import Logo from './assets/icons/logo.svg'
+import Header from '@/components/Header/Header.vue'
+import NavMenu from '@/components/NavMenu/NavMenu.vue'
 
 export default {
-  components: {},
+  components: { NavMenu, Header },
   data() {
     return {
       Logo
@@ -13,9 +15,8 @@ export default {
 
 <template>
   <div class="app">
-    <header>
-      <div><img alt="logo" :src="Logo" /></div>
-    </header>
+    <NavMenu />
+    <Header />
   </div>
 </template>
 
